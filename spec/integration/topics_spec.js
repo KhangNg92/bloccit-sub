@@ -75,6 +75,7 @@ describe("GET /topics/new", () => {
           Topic.findOne({where: {title: "blink-182 songs"}})
           .then((topic) => {
             expect(res.statusCode).toBe(303);
+            console.log(topic.title);
             expect(topic.title).toBe("blink-182 songs");
             expect(topic.description).toBe("What's your favorite blink-182 song?");
             done();
@@ -87,4 +88,7 @@ describe("GET /topics/new", () => {
       );
     });
   });
+
+
+
 });
