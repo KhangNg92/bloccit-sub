@@ -25,6 +25,6 @@
     "dialect": "postgres",
     "logging": false,
     "operatorsAliases": false,
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": "postgres://atvjmloqkaqvud:ff7b73213cec7ecbf3edaa8867e8f9f3afbb44a9a30d504e950edf4e4db35068@ec2-54-227-241-179.compute-1.amazonaws.com:5432/d3ccp15pqbfeit"
   }
 }
