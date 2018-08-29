@@ -49,6 +49,16 @@ module.exports = (sequelize, DataTypes) => {
         postId: post.id
       });
     });
+    // #1
+   Post.addScope("lastFiveFor", (userId) => {
+    // #2
+        return {
+          where: { userId: userId},
+    // #3
+          limit: 5,
+          order: [["createdAt", "DESC"]]
+        }
+      });
   };
   Post.prototype.getPoints = function(){
 
